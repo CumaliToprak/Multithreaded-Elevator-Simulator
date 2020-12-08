@@ -38,8 +38,9 @@ public class ExitThread implements Runnable {
 
             if (customerAmount != 0) {
 
-                Main.addElevatorQueue(customerAmount,floorNumber+1,0);
-                Main.floorCustomersAmount[floorNumber] -= customerAmount;
+                Main.addElevatorQueue(customerAmount,floorNumber,0);
+                //Main.floorCustomersAmount[floorNumber] -= customerAmount;
+                Main.decreaseFloorCustomersAmount(floorNumber,customerAmount);
             }
 
 

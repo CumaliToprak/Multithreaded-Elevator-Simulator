@@ -21,7 +21,7 @@ public class LoginThread implements Runnable {
 
         while (true){
 
-            int floorNumber = random.nextInt(5) + 1;
+            int floorNumber = random.nextInt(4)+1 ;
 
             int customerAmount = random.nextInt(10) + 1;
             Main.addElevatorQueue(customerAmount,0,floorNumber);
